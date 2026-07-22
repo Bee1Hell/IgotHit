@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- ============================================================
+	     肾上腺素飙升：被击中且疼痛高于20%时触发，持续2小时
+	     ============================================================ -->
+	<HediffDef>
+		<defName>AdrenalineRush</defName>
+		<label>Adrenaline Rush</label>
+		<description>The pawn's body is flooded with adrenaline from combat stress, dulling pain and enhancing physical performance at the cost of fine motor control.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<maxSeverity>1.0</maxSeverity>
+		<comps>
+			<li Class="IgotHit.CompProperties_AdrenalineRush" />
+		</comps>
+		<stages>
+
+			<!-- 第1阶 轻微：疼痛x90%, 移动速度x105% -->
+			<li>
+				<label>minor</label>
+				<painFactor>0.9</painFactor>
+				<statFactors>
+					<MoveSpeed>1.05</MoveSpeed>
+				</statFactors>
+			</li>
+
+			<!-- 第2阶 轻度：疼痛x80%, 移动速度x110%, 操作能力x95% -->
+			<li>
+				<minSeverity>0.25</minSeverity>
+				<label>mild</label>
+				<painFactor>0.8</painFactor>
+				<statFactors>
+					<MoveSpeed>1.10</MoveSpeed>
+				</statFactors>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<postFactor>0.95</postFactor>
+					</li>
+				</capMods>
+			</li>
+
+			<!-- 第3阶 中度：疼痛x60%, 移动速度x120%, 操作x90%, 视觉x90%, 休息x50% -->
+			<li>
+				<minSeverity>0.50</minSeverity>
+				<label>moderate</label>
+				<painFactor>0.6</painFactor>
+				<statFactors>
+					<MoveSpeed>1.20</MoveSpeed>
+				</statFactors>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<postFactor>0.90</postFactor>
+					</li>
+					<li>
+						<capacity>Sight</capacity>
+						<postFactor>0.90</postFactor>
+					</li>
+				</capMods>
+				<restFallFactor>0.50</restFallFactor>
+			</li>
+
+			<!-- 第4阶 重度：疼痛x50%, 移动速度x125%, 操作x80%, 视觉x80%, 休息x25% -->
+			<li>
+				<minSeverity>0.75</minSeverity>
+				<label>severe</label>
+				<painFactor>0.5</painFactor>
+				<statFactors>
+					<MoveSpeed>1.25</MoveSpeed>
+				</statFactors>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<postFactor>0.80</postFactor>
+					</li>
+					<li>
+						<capacity>Sight</capacity>
+						<postFactor>0.80</postFactor>
+					</li>
+				</capMods>
+				<restFallFactor>0.25</restFallFactor>
+			</li>
+
+			<!-- 第5阶 极重：疼痛x20%, 移动速度x125%, 操作x60%, 视觉x70%, 休息x0% -->
+			<li>
+				<minSeverity>0.90</minSeverity>
+				<label>extreme</label>
+				<painFactor>0.2</painFactor>
+				<statFactors>
+					<MoveSpeed>1.25</MoveSpeed>
+				</statFactors>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<postFactor>0.60</postFactor>
+					</li>
+					<li>
+						<capacity>Sight</capacity>
+						<postFactor>0.70</postFactor>
+					</li>
+				</capMods>
+				<restFallFactor>0.0</restFallFactor>
+			</li>
+
+		</stages>
+	</HediffDef>
+
+	<!-- ============================================================
+	     肾上腺素冷却：持续1天，存在时不会触发肾上腺素飙升
+	     ============================================================ -->
+	<HediffDef>
+		<defName>AdrenalineCooldown</defName>
+		<label>Adrenaline Rush Cooldown</label>
+		<description>The pawn's adrenal system is recovering from a recent rush and cannot trigger again yet.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-1.0</severityPerDay>
+			</li>
+		</comps>
+	</HediffDef>
+
+</Defs>

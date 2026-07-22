@@ -1,0 +1,11 @@
+E:\steam\steamapps\common\RimWorld\Mods\Test\Source\IgotHit\obj\Release\net472\IgotHit.csproj.AssemblyReference.cache
+E:\steam\steamapps\common\RimWorld\Mods\Test\Source\IgotHit\obj\Release\net472\IgotHit.GeneratedMSBuildEditorConfig.editorconfig
+E:\steam\steamapps\common\RimWorld\Mods\Test\Source\IgotHit\obj\Release\net472\IgotHit.AssemblyInfoInputs.cache
+E:\steam\steamapps\common\RimWorld\Mods\Test\Source\IgotHit\obj\Release\net472\IgotHit.AssemblyInfo.cs
+E:\steam\steamapps\common\RimWorld\Mods\Test\Source\IgotHit\obj\Release\net472\IgotHit.csproj.CoreCompileInputs.cache
+E:\steam\steamapps\common\RimWorld\Mods\Test\Source\IgotHit\bin\Release\net472\IgotHit.dll
+E:\steam\steamapps\common\RimWorld\Mods\Test\Source\IgotHit\bin\Release\net472\IgotHit.pdb
+E:\steam\steamapps\common\RimWorld\Mods\Test\Source\IgotHit\bin\Release\net472\0Harmony.dll
+E:\steam\steamapps\common\RimWorld\Mods\Test\Source\IgotHit\obj\Release\net472\IgotHit.csproj.Up2Date
+E:\steam\steamapps\common\RimWorld\Mods\Test\Source\IgotHit\obj\Release\net472\IgotHit.dll
+E:\steam\steamapps\common\RimWorld\Mods\Test\Source\IgotHit\obj\Release\net472\IgotHit.pdb

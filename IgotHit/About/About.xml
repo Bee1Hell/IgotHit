@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>I got hit！</name>
+	<author>Bee1Hell</author>
+	<supportedVersions>
+		<li>1.6</li>
+	</supportedVersions>
+	<packageId>Bee1Hell.IgotHit</packageId>
+	<modClass>IgotHit.ModMain</modClass>
+	<url>https://github.com/Bee1Hell/RimWorld-IgotHit</url>
+	<description>Adds an Adrenaline Rush system. When a humanlike pawn is hit and in pain above 20%, adrenaline kicks in with 5 stages of effects — dulling pain, altering mobility, manipulation, sight, and rest rate. The rush lasts 2 hours, followed by a 1-day cooldown before it can trigger again.
+
+为游戏增添了肾上腺素飙升机制。当人形角色被击中且疼痛高于20%时触发，分为5个阶段产生不同效果——影响疼痛、移动能力、操作能力、视觉能力和休息速率。效果持续2小时，随后进入1天的冷却期。</description>
+</ModMetaData>
