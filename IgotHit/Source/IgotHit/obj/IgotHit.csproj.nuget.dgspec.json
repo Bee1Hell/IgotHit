@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\steam\\steamapps\\common\\RimWorld\\Mods\\Test\\Source\\IgotHit\\IgotHit.csproj": {}
+    "e:\\steam\\steamapps\\common\\RimWorld\\Mods\\Test\\Source\\IgotHit\\IgotHit.csproj": {}
   },
   "projects": {
-    "E:\\steam\\steamapps\\common\\RimWorld\\Mods\\Test\\Source\\IgotHit\\IgotHit.csproj": {
+    "e:\\steam\\steamapps\\common\\RimWorld\\Mods\\Test\\Source\\IgotHit\\IgotHit.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\steam\\steamapps\\common\\RimWorld\\Mods\\Test\\Source\\IgotHit\\IgotHit.csproj",
+        "projectUniqueName": "e:\\steam\\steamapps\\common\\RimWorld\\Mods\\Test\\Source\\IgotHit\\IgotHit.csproj",
         "projectName": "IgotHit",
-        "projectPath": "E:\\steam\\steamapps\\common\\RimWorld\\Mods\\Test\\Source\\IgotHit\\IgotHit.csproj",
+        "projectPath": "e:\\steam\\steamapps\\common\\RimWorld\\Mods\\Test\\Source\\IgotHit\\IgotHit.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "E:\\steam\\steamapps\\common\\RimWorld\\Mods\\Test\\Source\\IgotHit\\obj\\",
+        "outputPath": "e:\\steam\\steamapps\\common\\RimWorld\\Mods\\Test\\Source\\IgotHit\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

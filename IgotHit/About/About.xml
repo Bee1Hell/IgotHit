@@ -5,10 +5,9 @@
 	<supportedVersions>
 		<li>1.6</li>
 	</supportedVersions>
-	<packageId>Bee1Hell.IgotHit</packageId>
-	<modClass>IgotHit.ModMain</modClass>
-	<url>https://github.com/Bee1Hell/RimWorld-IgotHit</url>
-	<description>Adds an Adrenaline Rush system. When a humanlike pawn is hit and in pain above 20%, adrenaline kicks in with 5 stages of effects — dulling pain, altering mobility, manipulation, sight, and rest rate. The rush lasts 2 hours, followed by a 1-day cooldown before it can trigger again.
+	<packageId>Bee1Hell.IgH.v1</packageId>
+	<url>https://github.com/Bee1Hell/IgotHit</url>
+	<description>Provides a lightweight combat reaction system based on vanilla mechanics, including adrenaline rush responses when hit, suppression effects when taking fire, and stagger/balance loss mechanics when sustaining severe damage. All mechanics are customizable in the Mod Settings.
 
-为游戏增添了肾上腺素飙升机制。当人形角色被击中且疼痛高于20%时触发，分为5个阶段产生不同效果——影响疼痛、移动能力、操作能力、视觉能力和休息速率。效果持续2小时，随后进入1天的冷却期。</description>
+提供了一个基于原版机制的轻量化战斗反应机制，包括被击中时的肾上腺素飙升反应，被击中时个体所产生的被压制效果，以及个体受到严重伤害时的失衡机制。所有机制都可在模组设置中自定义。</description>
 </ModMetaData>

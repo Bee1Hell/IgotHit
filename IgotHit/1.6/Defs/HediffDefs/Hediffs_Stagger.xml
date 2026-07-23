@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- ============================================================
+	     Stagger (踉跄): 小伤害 → 轻微失衡
+	     - 触发: 15 ≤ 有效伤害 < 25 (×体型)
+	     - 效果: Move×0.8, Manip×0.8
+	     - 持续: 10s (600 ticks)
+	     ============================================================ -->
+	<HediffDef>
+		<defName>Stagger</defName>
+		<label>Staggered</label>
+		<description>The pawn has lost partial balance from a heavy blow, affecting coordination and motor control.</description>
+		<hediffClass>IgotHit.Hediff_StaggerBase</hediffClass>
+		<maxSeverity>1.0</maxSeverity>
+		<stages>
+			<li>
+				<label>staggered</label>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<postFactor>0.80</postFactor>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<postFactor>0.80</postFactor>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>600</disappearsAfterTicks>
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<!-- ============================================================
+	     OffBalance (失去平衡): 中等伤害 → 明显失衡
+	     - 触发: 25 ≤ 有效伤害 < 50 (×体型)
+	     - 效果: Move×0.6, Manip×0.6
+	     - 持续: 10s (600 ticks)
+	     ============================================================ -->
+	<HediffDef>
+		<defName>OffBalance</defName>
+		<label>Off-balance</label>
+		<description>The pawn has lost all balance from an even heavier strike, causing severely impaired coordination.</description>
+		<hediffClass>IgotHit.Hediff_StaggerBase</hediffClass>
+		<maxSeverity>1.0</maxSeverity>
+		<stages>
+			<li>
+				<label>offBalance</label>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<postFactor>0.60</postFactor>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<postFactor>0.60</postFactor>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>600</disappearsAfterTicks>
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<!-- ============================================================
+	     Disabled (失能): 大伤害 → 严重瘫痪
+	     - 触发: 有效伤害 ≥ 50 (×体型)
+	     - 效果: Move×0.1, Manip×0.1
+	     - 持续: 固定 30s (1800 ticks，代码中 SetDuration 控制)
+	     ============================================================ -->
+	<HediffDef>
+		<defName>Disabled</defName>
+		<label>Disabled</label>
+		<description>The pawn has been temporarily crippled by devastating force, rendering it unable to act for a short time.</description>
+		<hediffClass>IgotHit.Hediff_StaggerBase</hediffClass>
+		<maxSeverity>1.0</maxSeverity>
+		<stages>
+			<li>
+				<label>disabled</label>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<postFactor>0.10</postFactor>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<postFactor>0.10</postFactor>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+		</comps>
+	</HediffDef>
+
+</Defs>

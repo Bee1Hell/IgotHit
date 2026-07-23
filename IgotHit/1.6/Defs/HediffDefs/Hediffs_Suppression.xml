@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- ============================================================
+	     Suppression (压制): cumulative build-up from being hit.
+	     - Severity = suppression value (0.00 ~ 1.00)
+	     - Decays by 0.01 (1%) every 2 seconds (120 ticks)
+	     - 5 stages affecting AimDelay, RangedCooldown & MeleeCooldown
+	     - Traits & genes affect decay rate
+	     ============================================================ -->
+	<HediffDef>
+		<defName>Suppression</defName>
+		<label>Suppression</label>
+		<description>The pawn is suppressed by incoming fire, with accumulated stress and fear impairing combat effectiveness.</description>
+		<hediffClass>IgotHit.Hediff_Suppression</hediffClass>
+		<maxSeverity>1.0</maxSeverity>
+		<stages>
+
+			<!-- Stage 0: 0.00~0.20 -->
+			<li>
+				<label>calm</label>
+			</li>
+
+			<!-- Stage 1: 0.21~0.50 -->
+			<li>
+				<minSeverity>0.21</minSeverity>
+				<label>mild</label>
+				<statFactors>
+					<AimingDelayFactor>1.10</AimingDelayFactor>
+					<RangedCooldownFactor>1.10</RangedCooldownFactor>
+					<MeleeCooldownFactor>1.10</MeleeCooldownFactor>
+				</statFactors>
+			</li>
+
+			<!-- Stage 2: 0.51~0.75 -->
+			<li>
+				<minSeverity>0.51</minSeverity>
+				<label>moderate</label>
+				<statFactors>
+					<AimingDelayFactor>1.30</AimingDelayFactor>
+					<RangedCooldownFactor>1.30</RangedCooldownFactor>
+					<MeleeCooldownFactor>1.30</MeleeCooldownFactor>
+				</statFactors>
+			</li>
+
+			<!-- Stage 3: 0.76~0.90 -->
+			<li>
+				<minSeverity>0.76</minSeverity>
+				<label>heavy</label>
+				<statFactors>
+					<AimingDelayFactor>1.50</AimingDelayFactor>
+					<RangedCooldownFactor>1.50</RangedCooldownFactor>
+					<MeleeCooldownFactor>1.50</MeleeCooldownFactor>
+				</statFactors>
+			</li>
+
+			<!-- Stage 4: 0.91~1.00 -->
+			<li>
+				<minSeverity>0.91</minSeverity>
+				<label>extreme</label>
+				<statFactors>
+					<AimingDelayFactor>2.00</AimingDelayFactor>
+					<RangedCooldownFactor>2.00</RangedCooldownFactor>
+					<MeleeCooldownFactor>2.00</MeleeCooldownFactor>
+				</statFactors>
+			</li>
+
+		</stages>
+	</HediffDef>
+
+</Defs>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- Stagger -->
+	<Stagger.label>踉跄</Stagger.label>
+	<Stagger.description>该个体因遭受重击而失去部分平衡，身体协调能力受到影响。</Stagger.description>
+	<Stagger.stages.0.label>踉跄</Stagger.stages.0.label>
+
+	<!-- OffBalance -->
+	<OffBalance.label>失去平衡</OffBalance.label>
+	<OffBalance.description>该个体因遭受更加强力的重击而失去所有平衡，身体协调能力大幅下降。</OffBalance.description>
+	<OffBalance.stages.0.label>失去平衡</OffBalance.stages.0.label>
+
+	<!-- Disabled -->
+	<Disabled.label>失能</Disabled.label>
+	<Disabled.description>该个体因遭受毁灭性的极重伤害而暂时性失去行动能力，在短时间内无法做出任何行动。</Disabled.description>
+	<Disabled.stages.0.label>失能</Disabled.stages.0.label>
+
+</LanguageData>

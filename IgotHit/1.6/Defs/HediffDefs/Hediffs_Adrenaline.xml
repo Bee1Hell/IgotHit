@@ -2,20 +2,17 @@
 <Defs>
 
 	<!-- ============================================================
-	     肾上腺素飙升：被击中且疼痛高于20%时触发，持续2小时
+	     Adrenaline Rush: triggered when hit with pain > 20%, lasts 2 hours
 	     ============================================================ -->
 	<HediffDef>
 		<defName>AdrenalineRush</defName>
 		<label>Adrenaline Rush</label>
-		<description>The pawn's body is flooded with adrenaline from combat stress, dulling pain and enhancing physical performance at the cost of fine motor control.</description>
-		<hediffClass>HediffWithComps</hediffClass>
+		<description>The pawn's body floods with adrenaline in response to intense pain, dulling the sensation of pain and enhancing physical performance to a degree. However, the side effects of surging adrenaline also impair the pawn's fine motor control and perception.</description>
+		<hediffClass>IgotHit.Hediff_AdrenalineRush</hediffClass>
 		<maxSeverity>1.0</maxSeverity>
-		<comps>
-			<li Class="IgotHit.CompProperties_AdrenalineRush" />
-		</comps>
 		<stages>
 
-			<!-- 第1阶 轻微：疼痛x90%, 移动速度x105% -->
+			<!-- Stage 1 Minor: pain x90%, move speed x105% -->
 			<li>
 				<label>minor</label>
 				<painFactor>0.9</painFactor>
@@ -24,10 +21,10 @@
 				</statFactors>
 			</li>
 
-			<!-- 第2阶 轻度：疼痛x80%, 移动速度x110%, 操作能力x95% -->
+			<!-- Stage 2 Light: pain x80%, move speed x110%, manipulation x95% -->
 			<li>
 				<minSeverity>0.25</minSeverity>
-				<label>mild</label>
+				<label>light</label>
 				<painFactor>0.8</painFactor>
 				<statFactors>
 					<MoveSpeed>1.10</MoveSpeed>
@@ -40,7 +37,7 @@
 				</capMods>
 			</li>
 
-			<!-- 第3阶 中度：疼痛x60%, 移动速度x120%, 操作x90%, 视觉x90%, 休息x50% -->
+			<!-- Stage 3 Moderate: pain x60%, move speed x120%, manipulation x90%, sight x90%, rest x50% -->
 			<li>
 				<minSeverity>0.50</minSeverity>
 				<label>moderate</label>
@@ -61,7 +58,7 @@
 				<restFallFactor>0.50</restFallFactor>
 			</li>
 
-			<!-- 第4阶 重度：疼痛x50%, 移动速度x125%, 操作x80%, 视觉x80%, 休息x25% -->
+			<!-- Stage 4 Severe: pain x50%, move speed x125%, manipulation x80%, sight x80%, rest x25% -->
 			<li>
 				<minSeverity>0.75</minSeverity>
 				<label>severe</label>
@@ -82,7 +79,7 @@
 				<restFallFactor>0.25</restFallFactor>
 			</li>
 
-			<!-- 第5阶 极重：疼痛x20%, 移动速度x125%, 操作x60%, 视觉x70%, 休息x0% -->
+			<!-- Stage 5 Extreme: pain x20%, move speed x125%, manipulation x60%, sight x70%, rest x0% -->
 			<li>
 				<minSeverity>0.90</minSeverity>
 				<label>extreme</label>
@@ -107,12 +104,12 @@
 	</HediffDef>
 
 	<!-- ============================================================
-	     肾上腺素冷却：持续1天，存在时不会触发肾上腺素飙升
+	     Adrenaline Cooldown: lasts 1 day, prevents triggering a new rush
 	     ============================================================ -->
 	<HediffDef>
 		<defName>AdrenalineCooldown</defName>
 		<label>Adrenaline Rush Cooldown</label>
-		<description>The pawn's adrenal system is recovering from a recent rush and cannot trigger again yet.</description>
+		<description>The pawn's adrenal system is recovering from a recent adrenaline rush and cannot trigger another surge for some time.</description>
 		<hediffClass>HediffWithComps</hediffClass>
 		<comps>
 			<li Class="HediffCompProperties_SeverityPerDay">

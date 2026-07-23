@@ -3,7 +3,7 @@
 
 	<!-- AdrenalineRush -->
 	<AdrenalineRush.label>肾上腺素飙升</AdrenalineRush.label>
-	<AdrenalineRush.description>该个体的身体因战斗压力而大量分泌肾上腺素，减轻痛感并提升身体机能，但精细运动能力下降。</AdrenalineRush.description>
+	<AdrenalineRush.description>该个体因剧烈的疼痛而开始大量分泌肾上腺素，减轻了痛感，并一定程度上提升了身体机能。但是大量肾上腺素所带来的副作用却又在一定程度上影响了该个体的操作能力和感知能力。</AdrenalineRush.description>
 	<AdrenalineRush.stages.0.label>轻微</AdrenalineRush.stages.0.label>
 	<AdrenalineRush.stages.1.label>轻度</AdrenalineRush.stages.1.label>
 	<AdrenalineRush.stages.2.label>中度</AdrenalineRush.stages.2.label>
@@ -12,6 +12,6 @@
 
 	<!-- AdrenalineCooldown -->
 	<AdrenalineCooldown.label>肾上腺素飙升冷却</AdrenalineCooldown.label>
-	<AdrenalineCooldown.description>该个体的肾上腺素系统正在从上次飙升中恢复，暂时无法再次触发。</AdrenalineCooldown.description>
+	<AdrenalineCooldown.description>该个体正在从上一次的肾上腺素飙升状态中恢复，在一定时间内无法再次大量分泌肾上腺素。</AdrenalineCooldown.description>
 
 </LanguageData>

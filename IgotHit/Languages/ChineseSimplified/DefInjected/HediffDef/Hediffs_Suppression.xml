@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- Suppression -->
+	<Suppression.label>压制</Suppression.label>
+	<Suppression.description>该个体因被命中而受到压制，其中所累积的压力和恐惧正在影响该个体的作战效率。</Suppression.description>
+	<Suppression.stages.0.label>冷静</Suppression.stages.0.label>
+	<Suppression.stages.1.label>轻度压制</Suppression.stages.1.label>
+	<Suppression.stages.2.label>中度压制</Suppression.stages.2.label>
+	<Suppression.stages.3.label>重度压制</Suppression.stages.3.label>
+	<Suppression.stages.4.label>极重压制</Suppression.stages.4.label>
+
+</LanguageData>
